@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const train = {name: 'Obema', speed: '100 км/ч', passengersNumber: 200}
+
+    function run() {
+        train.speed = '100 км/ч'
+        alert(`Поезд ${train.name} везет ${train.passengersNumber} пассажиров со скоростью ${train.speed}`)
+    }
+
+    function stop() {
+        train.speed = '0 км/ч'
+        alert(`Поезд ${train.name} остановился. Скорость ${train.speed}`)
+    }
+
+    function pickPassengers(increaseNumber) {
+        train.passengersNumber += increaseNumber
+    }
+
+    run()
+    stop()
+    pickPassengers(10)
+    run()
+    
+    /*
+        Задание 1:
+
+        Написать обьект Train у которого будут свойства:
+        -имя,
+        -скорость езды
+        -количество пассажиров
+        Методы:
+        Ехать -> Поезд {name} везет { количество пассажиров} со скоростью {speed}
+        Стоять -> Поезд {name} остановился. Скорость {speed}
+        Подобрать пассажиров -> Увеличивает кол-во пассажиров на Х
+    */
+</script>
+</body>
+</html>
